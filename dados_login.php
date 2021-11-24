@@ -9,7 +9,7 @@ if (isset($_GET['logout']) && $_GET['logout'] == 1) {
 
 $_SESSION['logged'] = $_SESSION['logged'] ?? False;
 
-// DADOS DA BASE DE DADOS
+// DADOS DA BASE DE DADOS (Simula a consulta no BD)
 $usuario_db = 'jmbcerqueira';
 $senha_db = '123456';
 
