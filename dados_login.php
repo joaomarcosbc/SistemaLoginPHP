@@ -13,8 +13,8 @@ $_SESSION['logged'] = $_SESSION['logged'] ?? False;
 $usuario_db = 'jmbcerqueira';
 $senha_db = '123456';
 
-$p_usuario = $_POST['usuario'] ?? NULL;
-$p_senha = $_POST['senha'] ?? NULL;
+$p_usuario = addslashes($_POST['usuario'] ?? NULL);
+$p_senha = addslashes($_POST['senha'] ?? NULL);
 
 if ($p_usuario == $usuario_db && $p_senha == $senha_db) {
     $_SESSION['usuario'] = $usuario_db;
