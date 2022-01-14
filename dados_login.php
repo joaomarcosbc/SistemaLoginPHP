@@ -18,7 +18,6 @@ $p_senha = addslashes($_POST['senha'] ?? NULL);
 
 if ($p_usuario == $usuario_db && $p_senha == $senha_db) {
     $_SESSION['usuario'] = $usuario_db;
-    $_SESSION['senha'] = $senha_db;
     $_SESSION['logged'] = True;
 }
 ?>
